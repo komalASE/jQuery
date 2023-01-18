@@ -1,0 +1,42 @@
+<!--1.Remove all CSS classes using jQuery-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .content {
+            background-color: antiquewhite;
+            width: 50%;
+        }
+        .sec-content{
+            background-color: aqua;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+            <p class="content">hello it's learning process</p>
+            <p class="sec-content">Hello it's demo only</p>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("*").removeClass();
+        });
+    </script>
+
+</body>
+
+</html>

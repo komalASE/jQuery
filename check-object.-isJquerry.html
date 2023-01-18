@@ -1,0 +1,31 @@
+<!-- 4. Check if an object is a jQuery object -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div><p>hello</p></div>
+    <script>
+        var a = { what: "A regular JS object" },
+            b = $('a');
+
+        if (a.jquery) { 
+            alert(' a is a jQuery object! ');
+        }
+
+        if (b.jquery) { 
+            alert(' b is a jQuery object! ');
+        }
+    </script>
+</body>
+
+</html>
